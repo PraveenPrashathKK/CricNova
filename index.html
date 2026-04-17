@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CricNova | Your Ultimate Destination for Cricket | Learn.Experience.Cricket🏏</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">CRICNOVA</div>
+    <div class="nav-menu">
+      <a href="#field"><i class="fa-solid fa-location-dot"></i> FIELD</a>
+      <a href="#formats "><i class="fa-solid fa-crosshairs"></i> FORMATS</a>
+      <a href="#shots"><i class="fa-solid fa-baseball-bat-ball"></i> SHOTS</a>
+      <a href="#deliveries"><i class="fa-solid fa-bullseye"></i> DELIVERIES</a>
+      <a href="#players"><i class="fa-solid fa-user-group"></i> PLAYERS</a>
+      <a href="#tournaments"><i class="fa-solid fa-trophy"></i> TOURNAMENTS</a>
+    </div>
+    <div class="right-section">
+      <div class="login" onclick="window.open('login.html','_blank')"><i class="fas fa-user"></i> LOGIN</div>
+      <div class="menu-icon"><i class="fas fa-bars"></i></div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <video autoplay muted loop class="bg-video">
+      <source src="upscaled-video.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag" style="color: black; font-size:larger;"><b>Welcome to the arena</b></p>
+      <h1>THE ULTIMATE DESTINATION<br>FOR CRICKET</h1>
+      <p class="hero-sub" style="font-size:large; color:black;"><b>Learn · Play · Experience Cricket 🏏</b></p>
+    </div>
+  </section>
+
+  <!-- CRICKET FIELD -->
+  <section class="section field-section" id="field">
+    <div class="section-inner">
+      <span class="label">01 — FIELD</span>
+      <h2>CRICKET FIELD</h2><p class="section-desc">A cricket field is a large circular or oval ground with a 22-yard pitch at its center.It is strategically divided into various fielding positions that play a crucial rolein both batting and bowling tactics. The pitch is where the bowler delivers the balland the batsman attempts to score runs. Surrounding areas such as the infield and outfield influence how runs are scored and prevented. Field placements are adjusted based on the match situation, player strengths, and game format.</p>
+      <button id="fullscreen-btn"><i class="fa-solid fa-expand"></i>   VIEW FULLSCREEN</button>
+      <div class="field-img-wrap">
+        <img src="Cricket_field_parts.svg" alt="Cricket Field" class="field-img">
+      </div>
+    </div>
+  </section>
+
+    <!-- FORMATS -->
+<section class="section formats-section" id="formats">
+  <div class="section-inner">
+    <span class="label">02 — FORMATS</span>
+    <h2>CRICKET FORMATS</h2><p class="section-desc">Cricket is played in three distinct formats, each with its own character,strategy, and thrill. From the five-day battle of Test cricket to the explosive twenty overs of T20, every format demands a different skill set and mindset from players.</p>
+    <!-- Tab Buttons -->
+    <div class="fmt-tabs">
+      <button class="fmt-tab active" data-fmt="test">
+        <i class="fas fa-shield-alt"></i>
+        <span>TEST</span>
+      </button>
+      <button class="fmt-tab" data-fmt="odi">
+        <i class="fas fa-circle-dot"></i>
+        <span>ODI</span>
+      </button>
+      <button class="fmt-tab" data-fmt="t20">
+        <i class="fas fa-bolt"></i>
+        <span>T20</span>
+      </button>
+    </div>
+    <!-- Panels -->
+    <div class="fmt-panels">
+      <!-- TEST -->
+      <div class="fmt-panel active" id="fmt-test">
+        <div class="fmt-left">
+          <div class="fmt-badge">EST. 1877</div>
+          <h3 class="fmt-title">TEST CRICKET</h3>
+          <p class="fmt-tagline">The Ultimate Examination</p><p class="fmt-body">The oldest and most prestigious format of the game. Played overfive days with two innings per side, Test cricket is the true measure of a player's skill, temperament, and endurance. Every session is a battle within a battle — a war of attrition that separates legends from the rest.</p>
+          <div class="fmt-stats">
+            <div class="fmt-stat">
+              <span class="stat-val">5</span>
+              <span class="stat-lbl">Days</span>
+            </div>
+            <div class="fmt-stat">
+              <span class="stat-val">2</span>
+              <span class="stat-lbl">Innings</span>
+            </div>
+            <div class="fmt-stat">
+              <span class="stat-val">90</span>
+              <span class="stat-lbl">Overs/Day</span>
+            </div>
+            <div class="fmt-stat">
+              <span class="stat-val">White</span>
+              <span class="stat-lbl">Kit</span>
+            </div>
+          </div>
+        </div>
+        <div class="fmt-right">
+          <div class="fmt-visual test-visual">
+            <div class="fmt-icon-wrap">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="fmt-glow test-glow"></div>
+            <div class="fmt-fact-strip">
+              <p><i class="fas fa-star"></i> Red ball used in Test matches</p>
+              <p><i class="fas fa-star"></i> White clothing is mandatory</p>
+              <p><i class="fas fa-star"></i> WTC governs the cycle</p>
+              <p><i class="fas fa-star"></i> Draw is a valid result</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ODI -->
+      <div class="fmt-panel" id="fmt-odi">
+        <div class="fmt-left">
+          <div class="fmt-badge">EST. 1971</div>
+          <h3 class="fmt-title">ONE DAY INTERNATIONAL</h3>
+          <p class="fmt-tagline">The Classic Balance</p>
+          <p class="fmt-body">50 overs per side, a full day of cricket, and the perfect blend of technique and aggression. ODIs demand consistent performance across every phase — powerplay, middle overs, and the death.The Cricket World Cup, the most coveted trophy in the game,is played in this format.</p>
+          <div class="fmt-stats">
+            <div class="fmt-stat">
+              <span class="stat-val">1</span>
+              <span class="stat-lbl">Day</span>
+            </div>
+            <div class="fmt-stat">
+              <span class="stat-val">50</span>
+              <span class="stat-lbl">Overs</span>
+            </div>
+            <div class="fmt-stat">
+              <span class="stat-val">1</span>
+              <span class="stat-lbl">Innings</span>
+            </div>
+            <div class="fmt-stat">
+              <span class="stat-val">White</span>
+              <span class="stat-lbl">Ball</span>
+            </div>
+          </div>
+        </div>
+        <div class="fmt-right">
+          <div class="fmt-visual odi-visual">
+            <div class="fmt-icon-wrap">
+              <i class="fas fa-circle-dot"></i>
+            </div>
+            <div class="fmt-glow odi-glow"></div>
+            <div class="fmt-fact-strip">
+              <p><i class="fas fa-star"></i> White ball under floodlights</p>
+              <p><i class="fas fa-star"></i> Powerplay in first 10 overs</p>
+              <p><i class="fas fa-star"></i> CWC held every 4 years</p>
+              <p><i class="fas fa-star"></i> DLS method for rain</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- T20 -->
+      <div class="fmt-panel" id="fmt-t20">
+        <div class="fmt-left">
+          <div class="fmt-badge">EST. 2003</div>
+          <h3 class="fmt-title">TWENTY20</h3>
+          <p class="fmt-tagline">Pure Entertainment</p>
+          <p class="fmt-body">20 overs, big hits, and non-stop action — T20 cricket redefined the sport for a new generation. Matches last about 3 hours, packed with sixes, innovative shots, and explosive pace bowling. It is the format that launched the IPL and the T20 World Cup,captivating billions worldwide.</p>
+          <div class="fmt-stats">
+            <div class="fmt-stat">
+              <span class="stat-val">3</span>
+              <span class="stat-lbl">Hours</span>
+            </div>
+            <div class="fmt-stat">
+              <span class="stat-val">20</span>
+              <span class="stat-lbl">Overs</span>
+            </div>
+            <div class="fmt-stat">
+              <span class="stat-val">6</span>
+              <span class="stat-lbl">Powerplay</span>
+            </div>
+            <div class="fmt-stat">
+              <span class="stat-val">Max</span>
+              <span class="stat-lbl">Sixes</span>
+            </div>
+          </div>
+        </div>
+        <div class="fmt-right">
+          <div class="fmt-visual t20-visual">
+            <div class="fmt-icon-wrap">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <div class="fmt-glow t20-glow"></div>
+            <div class="fmt-fact-strip">
+              <p><i class="fas fa-star"></i> Shortest international format</p>
+              <p><i class="fas fa-star"></i> Super Over for ties</p>
+              <p><i class="fas fa-star"></i> IPL is T20's biggest league</p>
+              <p><i class="fas fa-star"></i> T20 WC every 2 years</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- SHOTS -->
+  <section class="section shots-section" id="shots">
+    <div class="section-inner">
+      <span class="label">03 — SHOTS</span>
+      <h2>CRICKET SHOTS</h2>
+      <p class="section-desc">Cricket shots are the techniques used by batsmen to score runs and control the game.Each shot is played based on the line, length, and speed of the delivery. From elegant drives to powerful pulls and sweeps, every shot requires timing, precision, and skill.Mastering different shots allows a player to adapt to various match situations and field placements.</p>
+      <div class="featured-shot">
+        <img src="cover.jpg" alt="Cover Drive">
+        <div class="featured-info">
+          <h3>COVER DRIVE</h3>
+          <p>-Classical Shot</p>
+        </div>
+      </div>
+      <div class="shots-grid">
+        <div class="shot-card">
+          <img src="pull.jpeg" alt="Pull Shot">
+          <div class="shot-card-info">
+            <h3>PULL SHOT</h3>
+            <p>-Elegant Shot</p>
+          </div>
+        </div>
+        <div class="shot-card">
+          <img src="cutshot.jpeg" alt="Cut Shot">
+          <div class="shot-card-info">
+            <h3>CUT SHOT</h3>
+            <p>-Timing Shot</p>
+          </div>
+        </div>
+        <div class="shot-card">
+          <img src="straight.jpg" alt="Straight Drive">
+          <div class="shot-card-info">
+            <h3>STRAIGHT DRIVE</h3>
+            <p>-Classic Drive</p>
+          </div>
+        </div>
+        <div class="shot-card">
+          <img src="abdshot.jpeg" alt="Scoop Shot">
+          <div class="shot-card-info">
+            <h3>SCOOP SHOT</h3>
+            <p>-Cheeky Shot</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DELIVERIES -->
+  <section class="section deliveries-section" id="deliveries">
+    <div class="section-inner">
+      <span class="label">04 — DELIVERIES</span>
+      <h2>CRICKET DELIVERIES</h2>
+      <p class="section-desc">Cricket deliveries are the various techniques used by bowlers to challenge the batsman.Each delivery differs in speed, movement, and spin, making it difficult to predict and play.From fast-paced yorkers and bouncers to deceptive slower balls and spin variations, every delivery is designed with a specific strategy. Bowlers use these variations to control the game and take wickets.</p>
+      <div class="cards-container">
+        <div class="card">
+          <video src="yorker.mp4" muted loop class="card-video"></video>
+          <div class="card-info"><h3>YORKER</h3><p>-Full Length</p></div>
+        </div>
+        <div class="card">
+          <video src="inswing.mp4" muted loop class="card-video"></video>
+          <div class="card-info"><h3>INSWING</h3><p>-Swing Ball</p></div>
+        </div>
+        <div class="card">
+          <video src="outswing.mp4" muted loop class="card-video"></video>
+          <div class="card-info"><h3>OUTSWING</h3><p>-Swing Ball</p></div>
+        </div>
+        <div class="card">
+          <video src="legbreak.mp4" muted loop class="card-video"></video>
+          <div class="card-info"><h3>LEG BREAK</h3><p>-Spin Variation</p></div>
+        </div>
+        <div class="card">
+          <video src="offspin.mp4" muted loop class="card-video"></video>
+          <div class="card-info"><h3>OFF SPIN</h3><p>-Spin Variation</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLAYERS -->
+  <section class="section players-section" id="players">
+    <div class="section-inner">
+    <span class="label">04 — PLAYERS</span>
+      <h2>FEATURED PLAYERS</h2>
+      <p class="section-desc">
+        Featured players such as Virat Kohli, MS Dhoni, Rohit Sharma, AB de Villiers, and
+        Suresh Raina represent excellence and impact in modern cricket. Known for their unique
+        skills, consistency, and match-winning abilities, these players have contributed
+        significantly across formats — inspiring millions and setting high standards in the game.
+      </p>
+    <div class="players-grid">
+
+  <div class="player-card tall">
+    <img src="kohli.jpg" alt="Virat Kohli">
+    <div class="player-overlay">
+      <h3>Virat Kohli</h3>
+      <p>Batsman</p>
+      <button class="view-profile-btn"
+        data-name="Virat Kohli"
+        data-role="Batsman"
+        data-country="India"
+        data-tests="113"
+        data-odis="295"
+        data-t20s="125"
+        data-runs="27000+"
+        data-img="kohli.jpg"
+        data-desc="One of the greatest batsmen of all time. Known for his aggressive style, fitness, and consistency across all formats.">
+        View Profile
+      </button>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <img src="newmsd.jpg" alt="MS Dhoni">
+    <div class="player-overlay">
+      <h3>MS Dhoni</h3>
+      <p>Wicket Keeper</p>
+      <button class="view-profile-btn"
+        data-name="MS Dhoni"
+        data-role="Wicket Keeper"
+        data-country="India"
+        data-tests="90"
+        data-odis="350"
+        data-t20s="98"
+        data-runs="17000+"
+        data-img="msd.jpg"
+        data-desc="India's most celebrated captain. Famous for his calm under pressure, lightning stumpings, and the iconic 2011 World Cup winning six.">
+        View Profile
+      </button>
+    </div>
+  </div>
+
+  <div class="player-card tall">
+    <img src="rohitman.jpg" alt="Rohit Sharma">
+    <div class="player-overlay">
+      <h3>Rohit Sharma</h3>
+      <p>Batsman</p>
+      <button class="view-profile-btn"
+        data-name="Rohit Sharma"
+        data-role="Batsman"
+        data-country="India"
+        data-tests="67"
+        data-odis="264"
+        data-t20s="159"
+        data-runs="18000+"
+        data-img="rohit.jpg"
+        data-desc="The Hitman. Holds the record for the highest individual score in ODIs (264). A master of the pull shot and elegant drives.">
+        View Profile
+      </button>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <img src="newabd.jpg" alt="AB de Villiers">
+    <div class="player-overlay">
+      <h3>AB de Villiers</h3>
+      <p>Batsman</p>
+      <button class="view-profile-btn"
+        data-name="AB de Villiers"
+        data-role="Batsman"
+        data-country="South Africa"
+        data-tests="114"
+        data-odis="228"
+        data-t20s="78"
+        data-runs="20000+"
+        data-img="abd.jpg"
+        data-desc="Mr. 360°. Widely regarded as the most innovative batsman ever. Could hit any ball to any part of the ground with any shot imaginable.">
+        View Profile
+      </button>
+    </div>
+  </div>
+
+  <div class="player-card tall">
+    <img src="newboom.jpg" alt="Jasprit Bumrah">
+    <div class="player-overlay">
+      <h3>Jasprit Bumrah</h3>
+      <p>Bowler</p>
+      <button class="view-profile-btn"
+        data-name="Jasprit Bumrah"
+        data-role="Bowler"
+        data-country="India"
+        data-tests="40"
+        data-odis="89"
+        data-t20s="75"
+        data-runs="—"
+        data-img="bumrah.jpg"
+        data-desc="The most lethal fast bowler in the world. Known for his unplayable yorkers, deadly bouncers, and unique slinging action.">
+        View Profile
+      </button>
+    </div>
+  </div>
+  <div class="player-card">
+    <img src="raina.jpg" alt="Suresh Raina">
+    <div class="player-overlay">
+      <h3>Suresh Raina</h3>
+      <p>Batsman</p>
+      <button class="view-profile-btn"
+        data-name="Suresh Raina"
+        data-role="Batsman"
+        data-country="India"
+        data-tests="18"
+        data-odis="226"
+        data-t20s="78"
+        data-runs="8000+"
+        data-img="raina.jpg"
+        data-desc="Mr. IPL. One of the best fielders India has ever produced. A match-winner in limited overs cricket with his aggressive left-hand batting.">
+        View Profile
+      </button>
+    </div>
+  </div>
+
+  <div class="player-card">
+  <img src="newroot.jpg" alt="Joe Root">
+  <div class="player-overlay">
+    <h3>Joe Root</h3>
+    <p>Batsman</p>
+    <button class="view-profile-btn"
+      data-name="Joe Root"
+      data-role="Batsman"
+      data-country="England"
+      data-tests="145"
+      data-odis="162"
+      data-t20s="32"
+      data-runs="22000+"
+      data-img="root.jpg"
+      data-desc="England's modern batting great. One of the finest Test batsmen of his generation, known for his elegant technique and incredible consistency in the longest format.">
+      View Profile
+    </button>
+  </div>
+</div>
+
+<div class="player-card">
+  <img src="newsteve.jpg" alt="Steve Smith">
+  <div class="player-overlay">
+    <h3>Steve Smith</h3>
+    <p>Batsman</p>
+    <button class="view-profile-btn"
+      data-name="Steve Smith"
+      data-role="Batsman"
+      data-country="Australia"
+      data-tests="112"
+      data-odis="132"
+      data-t20s="51"
+      data-runs="18000+"
+      data-img="smith.jpg"
+      data-desc="Australia's batting genius. Widely regarded as the best Test batsman of his era. Known for his unorthodox technique, incredible concentration, and hunger for runs.">
+      View Profile
+    </button>
+  </div>
+</div>
+
+</div>
+
+<!-- PLAYER PROFILE POPUP -->
+<div id="player-overlay">
+  <div id="player-popup">
+    <button id="player-close">✕</button>
+    <div class="pp-top">
+      <img id="pp-img" src="" alt="">
+      <div class="pp-info">
+        <p class="pp-country" id="pp-country"></p>
+        <h2 id="pp-name"></h2>
+        <p class="pp-role" id="pp-role"></p>
+      </div>
+    </div>
+    <p class="pp-desc" id="pp-desc"></p>
+    <div class="pp-stats">
+      <div class="pp-stat">
+        <span class="pp-val" id="pp-tests"></span>
+        <span class="pp-lbl">Tests</span>
+      </div>
+      <div class="pp-stat">
+        <span class="pp-val" id="pp-odis"></span>
+        <span class="pp-lbl">ODIs</span>
+      </div>
+      <div class="pp-stat">
+        <span class="pp-val" id="pp-t20s"></span>
+        <span class="pp-lbl">T20Is</span>
+      </div>
+      <div class="pp-stat">
+        <span class="pp-val" id="pp-runs"></span>
+        <span class="pp-lbl">Int. Runs</span>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+  </section>
+
+  <!-- TOURNAMENTS -->
+  <section class="section tournaments-section" id="tournaments">
+    <div class="section-inner">
+      <span class="label">06 — TOURNAMENTS</span>
+      <h2>ICC TOURNAMENTS</h2><p class="section-desc">ICC tournaments represent the highest level of international cricket, bringing togetherthe best teams from around the world. Events such as the Cricket World Cup, T20 World Cup,Champions Trophy, and World Test Championship showcase intense competition across differentformats. These global events play a vital role in shaping the history of the game anduniting cricket fans worldwide.</p>
+      <div class="tournament-container">
+        <div class="tournament-card">
+          <img src="cwc.jpg" alt="Cricket World Cup" class="trophy-img">
+          <div class="tournament-info">
+            <h3>Cricket World Cup</h3>
+            <p><span>Frequency</span> Every 4 Years</p>
+            <p><span>Last Edition</span> 2023</p>
+            <p><span>Winner</span> Australia</p>
+          </div>
+        </div>
+        <div class="tournament-card">
+          <img src="t20worldcup.jpg" alt="T20 World Cup" class="trophy-img">
+          <div class="tournament-info">
+            <h3>T20 World Cup</h3>
+            <p><span>Frequency</span> Every 2 Years</p>
+            <p><span>Last Edition</span> 2026</p>
+            <p><span>Winner</span> India</p>
+          </div>
+        </div>
+        <div class="tournament-card">
+          <img src="championstrophy.jpg" alt="Champions Trophy" class="trophy-img">
+          <div class="tournament-info">
+            <h3>Champions Trophy</h3>
+            <p><span>Frequency</span> Every 4 Years</p>
+            <p><span>Last Edition</span> 2025</p>
+            <p><span>Winner</span> India</p>
+          </div>
+        </div>
+        <div class="tournament-card">
+          <img src="wtc.jpg" alt="World Test Championship" class="trophy-img">
+          <div class="tournament-info">
+            <h3>World Test Championship</h3>
+            <p><span>Cycle</span> 2 Years</p>
+            <p><span>Last Final</span> 2025</p>
+            <p><span>Winner</span> South Africa</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h2>CRICNOVA</h2>
+        <p>Learn cricket from basics to advanced. Explore shots, deliveries, players and tournaments.</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/" target="_blank"><img src="insta.jpeg" alt="Instagram" class="social"></a>
+          <a href="https://www.facebook.com/" target="_blank"><img src="facebook.jpeg" alt="Facebook" class="social"></a>
+          <a href="https://web.whatsapp.com/" target="_blank"><img src="whatsapp.jpeg" alt="WhatsApp" class="social"></a>
+          <a href="https://www.youtube.com/" target="_blank"><img src="youtube.jpeg" alt="YouTube" class="social"></a>
+          <a href="https://x.com/" target="_blank"><img src="x.jpeg" alt="X" class="social"></a>
+        </div>
+      <div class="newsletter">
+  <button id="fb-toggle-btn" style="background-color: #f5c518;color:black;">💬 Feedback</button>
+</div>
+
+<!-- POPUP OVERLAY -->
+<div id="fb-overlay">
+  <div id="fb-popup">
+    <button id="fb-close">✕</button>
+    <h3 style="color:#f5c518;">Send Feedback</h3>
+    <div class="fb-group">
+      <input type="text" id="fb-name" placeholder="Your name">
+      <p class="fb-err" id="err-name"></p>
+    </div>
+    <div class="fb-group">
+      <input type="email" id="fb-email" placeholder="Your email address">
+      <p class="fb-err" id="err-email"></p>
+    </div>
+    <div class="fb-group">
+      <textarea id="fb-msg" rows="4" placeholder="Write your feedback..."></textarea>
+      <p class="fb-err" id="err-msg"></p>
+    </div>
+    <button id="fb-btn" style="background-color: #f5c518;color:black;">Send Feedback</button>
+    <p class="fb-success" id="fb-success">Thank you! Feedback sent.</p>
+  </div>
+</div>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <a href="#field">Cricket Field</a>
+        <a href="#shots">Shots</a>
+        <a href="#deliveries">Deliveries</a>
+        <a href="#players">Players</a>
+        <a href="#tournaments">Tournaments</a>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p><i class="fas fa-envelope"></i> cricnova@mail.com</p>
+        <p><i class="fas fa-phone"></i> +91 9876543210</p><br><br>
+        <img src="icon.jpg" alt="Icon" class="icon">
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 CRICNOVA. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
